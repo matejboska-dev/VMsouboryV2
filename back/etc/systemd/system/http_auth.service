@@ -1,0 +1,8 @@
+[Unit]
+Description=HTTP Auth using qr code
+After=nginx.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/jouda/http_auth_token/
+ExecStart=/home/jouda/start_qr.sh
